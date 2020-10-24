@@ -1,0 +1,145 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="factory_base" id=":Qpe;I}#-gAO)p]U~V(Y" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">set_node</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="jkCg$a6l#[8:~1{,ls{V">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="F?Y~Lg,`MrXaI3[?@Rw}">
+            <field name="TEXT">set node</field>
+            <next>
+              <block type="field_dropdown" id="%0XLdl]31^L`GX%aWKM.">
+                <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">NAME</field>
+                <field name="USER0">wood</field>
+                <field name="CPU0">WOOD</field>
+                <field name="USER1">stone</field>
+                <field name="CPU1">STONE</field>
+                <field name="USER2">dirt</field>
+                <field name="CPU2">DIRT</field>
+                <field name="USER3">cobble</field>
+                <field name="CPU3">COBBLE</field>
+                <field name="USER4">air</field>
+                <field name="CPU4">AIR</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="4Y*b1d:pka/#hLhu]:Vu">
+            <field name="INPUTNAME">X</field>
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="u@2+n4E?n,sJZ7#[27nF">
+                <field name="TEXT">at x</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null" id="X#mns`2##!(l%6}@b-p~"></shadow>
+              <block type="type_number" id="#q]6*=P%y#w%dU#`SaQ7"></block>
+            </value>
+            <next>
+              <block type="input_value" id=";!0l3pEIYcaIRk0M5S5N">
+                <field name="INPUTNAME">Y</field>
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="%NHa$;0L0tjUO[GWeU[-">
+                    <field name="TEXT">, y</field>
+                  </block>
+                </statement>
+                <value name="TYPE">
+                  <shadow type="type_null" id="D-`7(!LHC:NlbL;8Z6DL"></shadow>
+                  <block type="type_number" id="{usz@4!Ad#Bwo?`)T(Nz"></block>
+                </value>
+                <next>
+                  <block type="input_value" id="]tSXWDcOm/pS?qeIx9|h">
+                    <field name="INPUTNAME">Z</field>
+                    <field name="ALIGN">LEFT</field>
+                    <statement name="FIELDS">
+                      <block type="field_static" id=".nFhS5*yUaGzCRx]9mLn">
+                        <field name="TEXT">, z</field>
+                      </block>
+                    </statement>
+                    <value name="TYPE">
+                      <shadow type="type_null" id="PCzj,mlHZK,m[{e!1V3f"></shadow>
+                      <block type="type_number" id="zFa4@RT9D{vgh.!WFLSQ"></block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="L#J|W0iXWE8GRL]=#2r/" deletable="false" movable="false">
+        <field name="TEXT">Set node at position</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="DddWnbtfIH;oen(j6dx}" deletable="false" movable="false">
+        <field name="TEXT">https://github.com/minetest/minetest/blob/master/doc/lua_api.txt</field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="t/dxl60~O6!c)Ri03J31"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="zrS:~8U/-h;)nT8QtbvJ"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="L_,F|!BCx~:tXa|/q@#K">
+        <mutation colour="#a55b5b"></mutation>
+        <field name="HUE">0</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="A]6/k~~a;Gewm}em5Q:w" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="NONE"></mutation>
+    <field name="NAME">register_chatcommand</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">NONE</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="KpdA}2cUO3W#e2Gp?Acm">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="_5gV`aCmC1|^%DwRP(JN">
+            <field name="TEXT">register chatcommand</field>
+            <next>
+              <block type="field_input" id="Uu;v.5!!R80IyD)M5]*!">
+                <field name="TEXT">default</field>
+                <field name="FIELDNAME">CMD</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="input_statement" id="X[b%|1z^jGp;O6H$;89o">
+            <field name="INPUTNAME">CONTENT</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="gG{oZJWu/iY|*eM),-y."></shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="Bl6)WF.VBuU2S[J9omi=" deletable="false" movable="false">
+        <field name="TEXT">Mintetest chat command definition</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="!/VxvJG~*U$sPb{^#s:W" deletable="false" movable="false">
+        <field name="TEXT">https://github.com/minetest/minetest/blob/master/doc/lua_api.txt</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="7NtK;[EYat[Mbo]9zHST">
+        <mutation colour="#a55b5b"></mutation>
+        <field name="HUE">0</field>
+      </block>
+    </value>
+  </block></xml>
